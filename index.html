@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <!-- Link css  -->
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <style>
+        .maindiv {
+            width: 100%;
+            height: 100vh;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            background-image: url('image/main.jpg');
+            background-size: 100% 100%;
+
+            /* /* animation: slider 9s infinite linear; */
+        }
+
+        /* @keyframes slider {
+    0% {
+        background-image: url('image/a.jpg');
+        background-size: 100% 100%;
+    }
+
+    33% {
+        background-image: url('image/b.jpg');
+        background-size: 100% 100%;
+    }
+
+    66% {
+        background-image: url('image/c.jpg');
+        background-size: 100% 100%;
+    }
+
+    99% {
+        background-image: url('image/d.jpg');
+        background-size: 100% 100%;
+    } */
+
+        /* } */
+    </style>
+</head>
+
+<body>
+    <header id="#home">
+        <div class="maindiv">
+            <div class="sign_in">
+                <div class="center">
+                    <input type="checkbox" id="show">
+                    <label for="show" class="show-btn" id="reg">Registration</label>
+                    <div class="container1">
+                        <label for="show" class="close-btn fas fa-times" title="close"></label>
+                        <div class="text">Registration</div>
+                        <tr>
+                            <hr>
+                            <form action="#" class="inputs_reg_form">
+                                <input type="text" class="reg_input" id="name" placeholder="Name">
+                                <input type="email" class="reg_input" id="email-id" placeholder="Email-id">
+                                <input type="text" class="reg_input" id="city" placeholder="City">
+                                <button type="submit" class="submit_reg_form" id="contact_sub-btn">Submit</button>
+                            </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <nav class="navbar">
+
+                <div class="hamburger-menu">
+                    <div class="line line-1"></div>
+                    <div class="line line-2"></div>
+                    <div class="line line-3"></div>
+                    Menu
+                </div>
+
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#home" class="nav-link">home</a></li>
+                    <hr>
+                    <li class="nav-item"><a href="#services" class="nav-link">services</a></li>
+                    <hr>
+                    <li class="nav-item"><a href="#contact_us" class="nav-link">contact us</a></li>
+                    <hr>
+                    <li class="nav-item"><a href="#about_us" class="nav-link">About us</a></li>
+                    <hr>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- services part body  -->
+
+    <main>
+        <div class="parent white" id="#services">
+            <div class="parent white">
+                <div class="card1" id="services">
+                    <h3>Pollution</h3>
+                    <div class="visual">
+                        <a href="">
+                            <a href="Pages/pollution.html"> <button class="btn"> Enter </button></a>
+                        </a>
+                    </div>
+                </div>
+                <div class="card1 ">
+                    <h3>Water PH</h3>
+                    <div class="visual">
+                        <a href="">
+                            <a href="Pages/Water ph.html"> <button class="btn">Enter</button></a>
+                        </a>
+                    </div>
+                    <div class="d-grid gap-2">
+                    </div>
+                </div>
+                <div class="card1 ">
+                    <h3>Temperature</h3>
+                    <div class="visual">
+                        <a href="">
+                            <a href="Pages/Temperature.html"> <button class="btn">Enter</button></a>
+                        </a>
+                    </div>
+                </div>
+                <div class="card1">
+                    <h3>Waste Management</h3>
+                    <div class="visual">
+                        <a href="">
+                            <a href="Pages/Waste management.html"> <button class="btn">Enter</button></a>
+                        </a>
+                    </div>
+                </div>
+            </div>
+    </main>
+
+    <hr>
+    <!-- contact page body  -->
+    <div class="contact" id="contact_us">
+        <div class="contact_form_title">
+            <p class="contact_title">Contact Us</p>
+        </div>
+        <div class="user_name">
+            <div class="name1_input">
+                <input type="text" class="form-control" id="input01" value="" required placeholder="Enter full name">
+            </div>
+            <div class="name2_input">
+                <input type="text" class="form-control" id="input02" value="" required placeholder="Enter email-id">
+            </div>
+        </div>
+        <div class="massage">
+            <textarea class="form-control" id="input03" rows="5" value="" required placeholder="Massage"></textarea>
+        </div>
+        <div class="contact_form">
+            <a href="#contact"><button id="contact_sub-btn">Submit</button></a>
+        </div>
+    </div>
+    <!-- Footer html start -->
+
+    <footer>
+        <div class="footer-container">
+            <div class="top-footer">
+                <div class="about">
+                    <p class="footer-grid-title" id="about_us">About us</p>
+                    <div class="about-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, maxime quos
+                        facere maiores dolorum minus! Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        Provident expedita quasi fugit nobis eligendi perferendis hic neque error molestias debitis.
+                    </div>
+                </div>
+                <div class="newslatter">
+                    <p class="footer-grid-title">Subscribe</p>
+                    <div class="news-letter-box">
+                        <p>Gate letest update</p>
+                        <div class="email-box">
+                            <input type="email" name="email" id="email" placeholder="Email"><br>
+                            <button>Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="socialmedia">
+                    <p class="footer-grid-title">Follow us</p>
+                    <div class="socialmedia-box">
+                        <p>Let Connect with us</p>
+                        <div class="icons">
+                            <a href=""><img src="icon/facebook-f-brands.svg" alt="facebook"></a>
+                            <a href=""><img src="icon/instagram-brands.svg" alt="instagram"></a>
+                            <a href=""><img src="icon/twitter-brands.svg" alt="twitter"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="uparrow">
+                    <a href="#" class="arrow"><img src="icon/arrow-up-solid.svg" alt="Gouparrow"></a>
+                </div>
+            </div>
+            <hr>
+            <div class="bottom-footer">
+                <p>Copyright &copy 2022- All Rights Reserved | Made by <a href="#" class="devloper-name">Satara</a>
+                </p>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="script/script.js"></script>
+
+</body>
+
+</html>
